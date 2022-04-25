@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: RedHatMono;
+    src: url(../fonts/RedHatMono-VariableFont_wght.ttf);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-areas: 
+        "encabezado"
+        "logo"
+        "portada"
+        "cards"
+        "pie"; */
+}
+
+#logo{
+    display: grid;
+    grid-area: logo;
+    height: auto;
+}
+
+#portada{
+    display: grid;
+    grid-area: portada;
+}
+
+
+.encabezado{
+    background-color: rgb(228, 204, 228);
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    grid-area: encabezado;
+}
+
+.encabezado__nav{
+    width: 60%;
+}
+
+.nav{
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.encabezado__redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15%;
+
+}
+.redes{
+    width: 50%;
+}
+.logo__redes{
+    width: 20%;
+    /* height: 100%; */
+    display: flex;
+    margin:0px auto 0px;
+}
+
+.logo__in{
+    opacity: 65%;
+}
+
+nav a{
+    text-decoration: none;
+    color: #7e7d7d;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+/* .nav{
+    list-style: none;
+    font-size: 0px;
+}
+
+.nav__pages{
+    display: inline-block;
+    width: 14%;
+    position: relative;
+    font-size: 14px;
+}
+
+.nav__pages__argentina{
+    display: none;
+    position: absolute;
+}
+
+.nav__pages--redes{
+    width: 10%;
+}
+
+.nav__arg{
+    display: block;
+}
+
+.nav__pages__argentina:hover {
+    
+    display: block;
+} */
+
+.logo__portada{
+    display: block;
+    margin:20px auto 20px;
+}
+
+.titulos{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.carrusel__portada{
+    width: 100%;
+    height: auto;
+}
+
+.cardsContainer{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* flex-direction: row; */
+    display: grid;
+    grid-template-areas:
+        "cards__titulo cards__titulo cards__titulo cards__titulo"
+        "art1           art2            art3        art4"; 
+}
+
+.cards__titulo{
+    grid-area: cards__titulo;
+}
+
+.card1{
+    grid-area: art1;
+}
+.card2{
+    grid-area: art2;
+}
+.card3{
+    grid-area: art3;
+}
+.card4{
+    grid-area: art4;
+}
+
+
+.card{
+    display: inline-block;
+    width: auto;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px;
+    border: solid 1px black;
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card__portada{
+    width: 100%;
+}
+
+.card__title{
+    font-size: 19px;
+}
+
+.card__parrafo{
+   font-size: 16px; 
+}
+
+
+.card__readMore{
+    text-decoration: none;    
+}
+
+footer p{
+    color:rgb(103, 138, 138);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer{
+    background-color:rgb(248, 241, 232, 0.8);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-area: pie;
+}
+
+.pie__logo{
+    position: relative;
+    display: block;
+    width: 120px;
+    margin: 0px auto 8px;
+}
+
+
+ul{
+list-style: none;
+font-size: 0px;
+}
+
+li{
+    display: inline-block;
+    font-size: 14px;
+    width: 14%;
+    position: relative;
+}
+
+ul ul{
+    position: absolute;
+    display: none;
+
+}
+
+ul ul li{
+    display: block;
+}
+
+ul li:hover ul {
+
+    display: block;
+}
+
+
+/* #destinos__cardsContainer{
+    display: grid;
+    grid-template-areas:
+    "cardsPatagonia"
+    "cardsNorte"
+    "cardsCosta"
+    "cardsCentro";
+}
+
+.cardsContainer__patagonia{
+    grid-area: cardsPatagonia;    
+}
+.cardsContainer__norte{
+    grid-area: cardsNorte;    
+}
+.cardsContainer__costa{
+    grid-area: cardsCosta;    
+}
+.cardsContainer__centro{
+    grid-area: cardsCentro;    
+} */
+
+
+
+#layout__argentina{
+
+    display: grid;
+    grid-template-areas: 
+        "encabezado"
+        "argentina__titulo"
+        "patagonia"
+        "norte"
+        "costa"
+        "centro"
+        "pie";
+}
+
+.argentina__titulo{
+    grid-area: argentina__titulo;   
+}
+
+.patagonia{
+    grid-area: patagonia;
+}
+.norte{
+    grid-area: norte;
+}
+.costa{
+    grid-area: costa;
+}
+.centro{
+    grid-area: centro;
+}
+
+.card__grid{
+    display: grid;
+    grid-template-areas:
+    "cards__titulo cards__titulo cards__titulo cards__titulo"
+    "card1 card2 card3 card4";
+}
+
+
+
+
+/* Breakpoint para visualización en smartphone 360px */
+
+@media (max-width:360px){
+
+    .cardsContainer{
+        grid-template-areas:
+            "cards__titulo"
+            "art1"
+            "art2"
+            "art3"
+            "art4"; 
+    }
+
+    li{
+        font-size: 10px;
+        width: 30%;
+    }
+
+
+
+}
