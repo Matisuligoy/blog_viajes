@@ -173,6 +173,7 @@ nav a{
 
 .card__portada{
     width: 100%;
+    opacity: 60%;
 }
 
 .card__title{
