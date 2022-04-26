@@ -173,7 +173,12 @@ nav a{
 
 .card__portada{
     width: 100%;
-    opacity: 60%;
+    opacity: 65%;
+    transition: opacity 1s;
+}
+
+.card__portada:hover{
+    opacity: 100%;
 }
 
 .card__title{
@@ -183,7 +188,6 @@ nav a{
 .card__parrafo{
    font-size: 16px; 
 }
-
 
 .card__readMore{
     text-decoration: none;    
