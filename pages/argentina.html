@@ -7,156 +7,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Argentina</title>
     <link rel="shortcut icon" href="../images/icono3.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
 
-    <div id="layout__argentina">
+    <div class="container-fluid">
 
-        <header class="encabezado">
-            <nav class="encabezado__nav">
-                <ul class="nav">
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="pages/sobre_mi.html">SOBRE MÍ</a> </li>
-                    <li><a href="pages/argentina.html">ARGENTINA</a>
-                        <ul>
-                            <li><a href="argentina.html#patagonia">Patagonia</a> </li>
-                            <li><a href="argentina.html#norte">Norte</a></li>
-                            <li><a href="argentina.html#costa">Costa</a></li>
-                            <li><a href="argentina.html#centro">Centro</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="articulos.html">ARTÍCULOS</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="encabezado__redes">
-                <a class="redes" href="http://www.instagram.com/matisuligoy"><img class="logo__redes" src="../images/header_footer/ig__logo-negro.png" alt="IG"></a>
-                <a class="redes" href="http://www.linkedin.com/"target="_blank"><img class="logo__redes logo__in" src="../images/header_footer/in__logo-negro.png" alt="IN"></a>
-            </div>   
-        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" aria-current="page" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre_mi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="argentina.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Argentina</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="argentina.html#patagonia">Patagonia</a></li>
+                            <li><a class="dropdown-item" href="argentina.html#norte">Norte</a></li>
+                            <li><a class="dropdown-item" href="argentina.html#costa">Costa</a></li>
+                            <li><a class="dropdown-item" href="argentina.html#centro">Centro</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="argentina.html">Todos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="articulos.html">Artículos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
 
-        <h1 class="argentina__titulo">Destinos</h1>
+                    </ul>
 
+                    <div class="encabezado__redes">
+                        <a class="redes" href="http://www.instagram.com/matisuligoy"><img class="logo__redes" src="../images/header_footer/ig__logo-negro.png" alt="IG"></a>
+                        <a class="redes" href="http://www.linkedin.com/" target="_blank"><img class="logo__redes logo__in" src="../images/header_footer/in__logo-negro.png" alt="IN"></a>
+                    </div>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
-        <section class="patagonia card__grid">
+        <h1 class="text-center">Destinos</h1>
 
-            <h2 class="titulos cards__titulo">Patagonia</h2>
-            
-                <article class="card art1">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Cima Uritorco">
-                    <h3 class="card__title">Pueblitos de Córdoba</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art2">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Bariloche">
-                    <h3 class="card__title">Senderos de Trekking</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art3">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Catedral">
-                    <h3 class="card__title">La magia del sur</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art4">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Catedral">
-                    <h3 class="card__title">El fin del mundo</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-        </section>
+        <h2>Patagonia</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+            <div class="col">
+              <div class="card h-100 w-100">
+                <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bariloche</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 w-100">
+                <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">El Bolson</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 w-100">
+                <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">El Chalten</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 w-100">
+                <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">El Calafate</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Norte</h2>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+              <div class="col">
+                <div class="card h-100 w-100">
+                  <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Bariloche</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 w-100">
+                  <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">El Bolson</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 w-100">
+                  <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">El Chalten</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 w-100">
+                  <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">El Calafate</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2>Costa</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+                <div class="col">
+                  <div class="card h-100 w-100">
+                    <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bariloche</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 w-100">
+                    <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">El Bolson</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 w-100">
+                    <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">El Chalten</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 w-100">
+                    <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">El Calafate</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Centro</h2>
+
+              <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card h-100 w-100">
+                      <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Bariloche</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 w-100">
+                      <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">El Bolson</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 w-100">
+                      <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">El Chalten</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 w-100">
+                      <img src="../images/DSC_0292.JPG" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">El Calafate</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
         
-        <section class="norte card__grid">
 
-            <h2 class="titulos cards__titulo">Norte</h2>
-
-            
-                <article class="card art1">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Cima Uritorco">
-                    <h3 class="card__title">Pueblitos de Córdoba</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art2">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Bariloche">
-                    <h3 class="card__title">Senderos de Trekking</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art3">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Catedral">
-                    <h3 class="card__title">La magia del sur</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art4">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Catedral">
-                    <h3 class="card__title">El fin del mundo</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-        </section>
-
-        <section class="costa card__grid">
-
-            <h2 class="titulos cards__titulo">Costa</h2>
-
-            
-                <article class="card art1">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Cima Uritorco">
-                    <h3 class="card__title">Pueblitos de Córdoba</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art2">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Bariloche">
-                    <h3 class="card__title">Senderos de Trekking</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art3">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Catedral">
-                    <h3 class="card__title">La magia del sur</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art4">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Catedral">
-                    <h3 class="card__title">El fin del mundo</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-        </section>
-
-        <section class="centro card__grid">
-
-            <h2 class="titulos cards__titulo">Centro</h2>
-    
-            
-                <article class="card art1">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Cima Uritorco">
-                    <h3 class="card__title">Pueblitos de Córdoba</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art2">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Bariloche">
-                    <h3 class="card__title">Senderos de Trekking</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art3">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Catedral">
-                    <h3 class="card__title">La magia del sur</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-                <article class="card art4">
-                    <img class="card__portada" src="../images/DSC_0292.JPG" alt="Catedral">
-                    <h3 class="card__title">El fin del mundo</h3>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non... <a class="card__readMore" href="">Leer más</a> </p>
-                </article>
-        </section>
-        
-
-
-        <footer>
-            <a href="#header"><img class="pie__logo" src="../images/logo4.png" alt="Mati Suligoy"></a>
-            <section>
-                <p class>- 2022 -</p>
-                <p class>Todo el contenido es de mi autoría y no puede reproducirse sin permiso.</p>
+        <footer class="row pie__bootstrap rounded">
+            <a class="offset-2 col-3 pie__logo" href="#header"><img class="img-fluid" src="../images/logo4.png" alt="Mati Suligoy"></a>
+            <section class="col-5 offset-2">
+                <p class="pie__texto">- 2022 -</p>
+                <p class="pie__texto">Todo el contenido es de mi autoría y no puede reproducirse sin permiso.</p>
             </section>
+            
         </footer>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
