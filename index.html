@@ -13,57 +13,51 @@
 
 <body>
 
-    <div class="container-fluid">
+        <header class="sticky-top">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" aria-current="page" href="index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                <div class="container-fluid">
+
+                    <!-- <a class="navbar-brand" href="../index.html">Inicio</a> -->
+                    <a class="nav-link" aria-current="page" href="index.html"><img class="nav__logo" src="images/logo4.png" alt=""></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="pages/sobre_mi.html">Sobre mí</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="pages/argentina.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Argentina</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="pages/argentina.html#patagonia">Patagonia</a></li>
-                            <li><a class="dropdown-item" href="pages/argentina.html#norte">Norte</a></li>
-                            <li><a class="dropdown-item" href="pages/argentina.html#costa">Costa</a></li>
-                            <li><a class="dropdown-item" href="pages/argentina.html#centro">Centro</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="pages/argentina.html">Todos</a></li>
-                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/articulos.html">Artículos</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Argentina</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="pages/argentina.html">Patagonia</a></li>
+                            <li><a class="dropdown-item" href="pages/argentina.html">Norte</a></li>
+                            <li><a class="dropdown-item" href="pages/argentina.html">Centro</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/contacto.html">Contacto</a>
                         </li>
-
-                    </ul>
-
-                    <div class="encabezado__redes">
-                        <a class="redes" href="http://www.instagram.com/matisuligoy"><img class="logo__redes" src="images/header_footer/ig__logo-negro.png" alt="IG"></a>
-                        <a class="redes" href="http://www.linkedin.com/" target="_blank"><img class="logo__redes logo__in" src="images/header_footer/in__logo-negro.png" alt="IN"></a>
+                        </ul>
+                        <!-- <form class="d-flex"> -->
+                        <div class="encabezado__redes">
+                            <a class="" href="http://www.instagram.com/matisuligoy" target="_blank"><img class="nav__img" src="images/header_footer/ig__logo-negro.png" alt="IG"></a>
+                            <a class="offset-4" href="http://www.linkedin.com/" target="_blank"><img class="nav__img logo__in" src="images/header_footer/in__logo-negro.png" alt="IN"></a>
+                        </div>
+                            <!-- </form> -->
                     </div>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+
                 </div>
-            </div>
-        </nav>
+              </nav>
+        </header>
 
-        <section class="row">
-            <img class="col-5 logo__portada" src="images/logo4.png" alt="Mati Suligoy">
-        </section>
-
-        <h1 class="text-center">DESTINOS</h1>
+        <h1 class="text-center mt-3 mb-3">DESTINOS</h1>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -120,16 +114,24 @@
             </article>
 
         </section>
+
+        <footer>
+            <a href="#header"><img class="pie__logo" src="images/logo4.png" alt="Mati Suligoy"></a>
+            <section>
+                <p>- 2022 -</p>
+                <p>Todo el contenido es de mi autoría y no puede reproducirse sin permiso.</p>
+            </section>
+        </footer>
             
 
-        <footer class="row pie__bootstrap rounded">
+        <!-- <footer class="row pie__bootstrap">
             <a class="offset-2 col-3 pie__logo" href="#header"><img class="img-fluid" src="images/logo4.png" alt="Mati Suligoy"></a>
             <section class="col-5 offset-2">
                 <p class="pie__texto">- 2022 -</p>
                 <p class="pie__texto">Todo el contenido es de mi autoría y no puede reproducirse sin permiso.</p>
             </section>
             
-        </footer>
+        </footer> -->
 
     </div>
 
