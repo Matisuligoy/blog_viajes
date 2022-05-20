@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+// header
+
+.nav__img{
+    height: 30px;
+
+}
+
+.nav__logo{
+    height: 45px;
+    padding-right:50px;
+
+}
+
+.encabezado__redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15%;
+}
+
+.logo__in{
+    opacity: 65%;
+}
+
+
+nav a{
+    font-weight: bold;
+}
+
+
+// contenido de la seccion
+
+.sobremi__container{
+    display: grid;
+    grid-template-areas:
+    "sobremi__intro sobremi__img"
+    "sobremi__cita  sobremi__img"
+    "sobremi__texto sobremi__img";
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+
+.sobremi__intro{
+    grid-area: sobremi__intro;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+.sobremi__img{
+    grid-area: sobremi__img;
+    /* width: 400px; */
+    border-radius: 10%;
+margin: auto;
+}
+
+.sobremi__cita{
+    grid-area: sobremi__cita;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+.sobremi__texto{
+    grid-area: sobremi__texto;
+    text-align: justify;
+    padding-right: 30px;
+    margin-bottom: 0;
+}
+
+.citas{
+    font-style: italic;
+    color: $color-citas
+}
+
+
+// footer
+
+footer p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer{
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: pie;
+    width: 100vw;
+}
+
+.pie__logo{
+    height: 50px;
+    margin-right: 50px;
+}
+
+.pie__texto{
+    margin: 0px;
+}
+
+
+// queris
+
+@media (max-width:360px){
+
+
+    footer p{
+        font-size: 12px;
+    }
+
+    .pie__logo{
+        height: 40px;
+    }
+
+}
+
+@media (max-width:900px){
+
+    .sobremi__container{
+        grid-template-areas:
+        "sobremi__img"
+        "sobremi__intro"
+        "sobremi__cita "
+        "sobremi__texto";
+        width: 100%;
+
+    }
+    
+    .sobremi__intro{
+        padding-right: 0;
+    }
+
+    .sobremi__cita{
+        padding-right: 0;
+    }
+    
+    .sobremi__texto{
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:1500px){
+    .sobremi__container{
+        width: 70%;
+       
+    }
+
+}
