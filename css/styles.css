@@ -9,9 +9,9 @@
     src: url(../fonts/RedHatMono-VariableFont_wght.ttf);
 } */
 
-#container{
+/* #container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */ */
     /* display: grid;
     grid-template-areas: 
         "encabezado"
@@ -19,11 +19,8 @@
         "portada"
         "cards"
         "pie"; */
-}
+/* }
 
-/* .container__logo{
-    width: auto;
-} */
 
 /* #logo{
     display: grid;
@@ -32,194 +29,24 @@
 } */
 
 
-#portada{
+/* #portada{
     display: grid;
     grid-area: portada;
-}
-
-.nav__img{
-    height: 30px;
-
-}
-
-.nav__logo{
-    height: 45px;
-    padding-right:50px;
-
-}
+} */
 
 
-.encabezado__redes{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 15%;
-}
-
-
-.logo__in{
-    opacity: 65%;
-}
-
-
-nav a{
-    font-weight: bold;
-}
-
-
-
-
+/* 
 .titulos{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-}
-
-.carrusel__portada{
-    width: 100%;
-    height: auto;
-}
-
-.cardsContainer{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* flex-direction: row; */
-    display: grid;
-    grid-template-areas:
-        "cards__titulo cards__titulo cards__titulo cards__titulo"
-        "art1           art2            art3        art4"; 
-}
-
-.cards__titulo{
-    grid-area: cards__titulo;
-}
-
-.card1{
-    grid-area: art1;
-}
-.card2{
-    grid-area: art2;
-}
-.card3{
-    grid-area: art3;
-}
-.card4{
-    grid-area: art4;
-}
-
-/* .form{
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 } */
 
-
-.card{
-    display: inline-block;
-    width: auto;
-    margin-top: 0px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 0px;
-    border: solid 1px black;
-    overflow: hidden;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.card__portada{
-    width: 100%;
-    opacity: 75%;
-    transition: opacity 1s;
-}
-
-.card__portada:hover{
-    opacity: 100%;
-}
-
-.card__title{
-    font-size: 19px;
-}
-
-.card__parrafo{
-   font-size: 16px; 
-}
-
-.card__readMore{
-    text-decoration: none;    
-}
-
-footer p{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-}
-
-footer{
-    background-color: #f8f9fa;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    grid-area: pie;
-    width: 100vw;
-}
-
-/* .pie__bootstrap{
-    display: flex;
-    align-items: center;
-} */
-
-.pie__logo{
-    height: 50px;
-    margin-right: 50px;
-}
-
-.pie__texto{
-    margin: 0px;
-}
-
-
-#layout__argentina{
-
-    display: grid;
-    grid-template-areas: 
-        "encabezado"
-        "argentina__titulo"
-        "patagonia"
-        "norte"
-        "costa"
-        "centro"
-        "pie";
-}
-
-.argentina__titulo{
-    grid-area: argentina__titulo;   
-}
-
-.patagonia{
-    grid-area: patagonia;
-}
-.norte{
-    grid-area: norte;
-}
-.costa{
-    grid-area: costa;
-}
-.centro{
-    grid-area: centro;
-}
-
-.card__grid{
+/* .card__grid{
     display: grid;
     grid-template-areas:
     "cards__titulo cards__titulo cards__titulo cards__titulo"
     "card1 card2 card3 card4";
-}
+} */
 
 
 /* .citas{
@@ -233,26 +60,18 @@ footer{
 
 @media (max-width:360px){
 
-    .cardsContainer{
+    /* .cardsContainer{
         grid-template-areas:
             "cards__titulo"
             "art1"
             "art2"
             "art3"
             "art4"; 
-    }
+    } */
 
     li{
         font-size: 10px;
         width: 30%;
-    }
-
-    footer p{
-        font-size: 12px;
-    }
-
-    .pie__logo{
-        height: 40px;
     }
 
 }

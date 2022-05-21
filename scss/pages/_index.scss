@@ -1,0 +1,21 @@
+.card__portada{
+    width: 100%;
+    opacity: 75%;
+    transition: opacity 1s;
+}
+
+.card__portada:hover{
+    opacity: 100%;
+}
+
+.card__title{
+    font-size: 19px;
+}
+
+.card__parrafo{
+   font-size: 16px; 
+}
+
+.card__readMore{
+    text-decoration: none;    
+}
