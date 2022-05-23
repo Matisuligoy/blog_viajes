@@ -1,4 +1,13 @@
-// contenido de la seccion
+// map-get
+
+$lista: (
+    ancho: 50%,
+    padding-arriba: 20px,
+    padding-abajo: 20px,
+    margen: auto,
+);
+
+
 
 .sobremi__container{
     display: grid;
@@ -6,12 +15,12 @@
     "sobremi__intro sobremi__img"
     "sobremi__cita  sobremi__img"
     "sobremi__texto sobremi__img";
-    width: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: auto;
+    width: map-get($lista, ancho);
+    padding-top: map-get($lista, padding-arriba);
+    padding-bottom: map-get($lista, padding-abajo);
+    margin: map-get($lista, margen);
 }
-
+ 
 
 .sobremi__intro{
     grid-area: sobremi__intro;

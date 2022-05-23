@@ -8,14 +8,17 @@
     opacity: 100%;
 }
 
-.card__title{
-    font-size: 19px;
-}
-
-.card__parrafo{
-   font-size: 16px; 
-}
-
 .card__readMore{
     text-decoration: none;    
 }
+
+// mapa //
+
+$fuentes:("title": 19px, "parrafo": 16px);
+
+@each $var, $tamanio in $fuentes {
+    .card__#{$var}{
+        font-size: $tamanio;
+    }
+}
+
