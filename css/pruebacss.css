@@ -70,21 +70,26 @@
 .card__parrafo {
   font-size: 16px; }
 
-.articulos__imgContainer {
-  width: 100%;
-  border-radius: 10%; }
+.articulos_container {
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  padding-right: 30px; }
 
-.articulos__imgContainer img {
-  width: 100%; }
+.imgFoot {
+  text-align: center;
+  padding-right: 30px;
+  font-style: italic;
+  color: #bd925d; }
 
-@media (max-width: 360px) {
-  .articulos__imgContainer {
-    width: auto;
-    height: 400px;
-    overflow: hidden; }
-  .articulos__imgContainer img {
-    margin: -80px 0 0 -500px;
-    width: auto; } }
+.articulos__img {
+  border-radius: 10%;
+  margin: auto; }
 
 .nav__padding {
   padding: 0; }
